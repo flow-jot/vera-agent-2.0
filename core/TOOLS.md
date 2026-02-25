@@ -2,6 +2,11 @@
 
 ## FlowJot Client Intake Chain (Section 2.6)
 
+## Repo Locations
+
+- Active repo (OpenClaw reads from here): `/root/.openclaw/workspace/vera-agent-2.0`
+- Legacy repo (archival only; do not edit): `vera-agent`
+
 - **True intake path**:
   - Softr client portal → Airtable logging → ClickUp as the execution queue.
 - **Morning brief**:
