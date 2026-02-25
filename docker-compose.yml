@@ -1,0 +1,22 @@
+version: "3.9"
+
+services:
+  openclaw-gateway:
+    image: openclaw:local
+    security_opt:
+      - no-new-privileges:true
+      - seccomp:/root/.openclaw/workspace/vera-agent/seccomp-openclaw.json
+      - apparmor=openclaw-profile
+    cap_drop:
+      - ALL
+    cap_add:
+      - NET_BIND_SERVICE
+    read_only: true
+    tmpfs:
+      - /tmp
+      - /var/run
+    volumes:
+      - ./workspace:/workspace:rw
+      - ./memory:/memory:rw
+      - ./core:/core:ro
+

@@ -1,0 +1,19 @@
+# Secrets and auth
+SECRETS.md
+auth-profiles.json
+paired.json
+*.key
+*.env
+openclaw.json
+
+# Media and large artifacts
+media/
+
+# Planning/context
+master-plan-context.md
+
+# Common junk
+.DS_Store
+node_modules/
+dist/
+
